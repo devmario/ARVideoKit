@@ -87,7 +87,7 @@ struct RenderAR {
         }
     }
     
-    var buffer: CVPixelBuffer? {
+    public var buffer: CVPixelBuffer? {
         if view is ARSCNView {
             guard let size = bufferSize else { return nil }
             //UIScreen.main.bounds.size
