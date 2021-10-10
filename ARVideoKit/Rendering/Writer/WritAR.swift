@@ -134,7 +134,7 @@ class WritAR: NSObject, AVCaptureAudioDataOutputSampleBufferDelegate {
         audioDataOutput.setSampleBufferDelegate(self, queue: queue)
 
         session = AVCaptureSession()
-        session.sessionPreset = .vga640x480
+        session.sessionPreset = .medium
         session.usesApplicationAudioSession = true
         session.automaticallyConfiguresApplicationAudioSession = false
         
